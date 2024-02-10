@@ -164,13 +164,18 @@
   display: flex;
   column-gap: 40px;
   margin: 0 auto;
+  flex-direction: row;
+  max-width: 1000px;
+  flex-wrap: wrap;
 }
 
 .recipes__iframe {
   display: flex;
   border: none;
   column-gap: 40px;
-  flex-direction: column;
+  min-width: 480px;
+  height: 273px;
+  flex-direction: row;
 }
 
 .recipes__video-caption {
@@ -179,20 +184,12 @@
   line-height: 30px;
   color: white;
   display: flex;
+  padding-top: 24px;
+  width: 480px;
   justify-content: space-between;
   margin: 0;
-  padding-top: 24px;
 }
 
-iframe {
-  width: 480px;
-  height: 273px;
-}
-
-.recipe__video-title {
-  margin: 0;
-}
-
-.recipe__video-length {
+p {
   margin: 0;
 }
