@@ -58,7 +58,7 @@
   margin: 0;
   padding-top: 183px;
   padding-bottom: 28px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 60px;
   line-height: 72px;
   letter-spacing: -0.6px;
@@ -97,7 +97,7 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #838383;
@@ -140,7 +140,7 @@
   margin: 0;
   padding-bottom: 24px;
   max-width: 580px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   color: white;
