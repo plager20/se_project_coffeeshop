@@ -276,7 +276,7 @@ input[type="checkbox"] {
   margin-right: 12px;
 }
 
-.reservation__form_fieldset_checkbox {
+.reservation__fieldset_checkbox {
   display: flex;
   flex-direction: row;
   align-items: center;
