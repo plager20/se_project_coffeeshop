@@ -207,7 +207,7 @@ p {
   margin: 0;
 }
 
-.reservation__header {
+.reservation__title {
   display: flex;
   margin: 0;
   padding: 100px 0 80px 0;
@@ -252,6 +252,7 @@ label {
 
 label:last-of-type {
   display: flex;
+  padding: 0;
 }
 
 button {
