@@ -223,7 +223,7 @@ p {
   padding: 0 0 120px 0;
 }
 
-.reservation__form_fieldset {
+.reservation__fieldset {
   display: flex;
   flex-direction: column;
   border: none;
