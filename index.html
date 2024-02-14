@@ -14,7 +14,7 @@
       content="Coffee, Coffee Shop, Recipe, Expresso, Triple Peaks"
     />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="favicon.icon" />
+    <link rel="stylesheet" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -101,12 +101,12 @@
               allowfullscreen
             ></iframe>
             <div class="recipes__video-caption">
-              <p>Aeropress recipe</p>
-              <p>~5 min</p>
+              <p class="recipe__name">Aeropress recipe</p>
+              <p class="recipe__video-time">~5 min</p>
             </div>
             <div class="recipes__video-caption">
-              <p>French press recipe</p>
-              <p>~15 min</p>
+              <p class="recipe__name">French press recipe</p>
+              <p class="recipe__video-time">~15 min</p>
             </div>
           </div>
         </section>
@@ -114,12 +114,20 @@
           <h2 class="reservation__title">Book a table</h2>
           <form class="reservation__form form">
             <fieldset class="reservation__fieldset">
-              <label for="name">Name *</label>
-              <input type="text" id="name" placeholder="Name Surname" />
+              <label class="reservation__label" for="name">Name *</label>
+              <input
+                class="reservation__input"
+                type="text"
+                id="name"
+                placeholder="Name Surname"
+              />
             </fieldset>
             <fieldset class="reservation__fieldset">
-              <label for="number-of-guest">Number of guest *</label>
+              <label class="reservation__label" for="number-of-guest"
+                >Number of guest *</label
+              >
               <input
+                class="reservation__input"
                 type="number"
                 min="1"
                 max="8"
@@ -128,20 +136,38 @@
               />
             </fieldset>
             <fieldset class="reservation__fieldset">
-              <label for="date-and-time">Date & time *</label>
-              <input type="datetime-local" id="date-and-time" />
+              <label class="reservation__label" for="date-and-time"
+                >Date & time *</label
+              >
+              <input
+                class="reservation__input"
+                type="datetime-local"
+                id="date-and-time"
+              />
             </fieldset>
             <fieldset class="reservation__fieldset">
-              <label for="email">Your email *</label>
-              <input type="email" id="email" placeholder="email@email.com" />
+              <label class="reservation__label" for="email">Your email *</label>
+              <input
+                class="reservation__input"
+                type="email"
+                id="email"
+                placeholder="email@email.com"
+              />
             </fieldset>
             <fieldset class="reservation__fieldset">
-              <button type="submit">Book a Table</button>
+              <button class="reservation__button" type="submit">
+                Book a Table
+              </button>
             </fieldset>
             <fieldset
               class="reservation__fieldset reservation__fieldset_checkbox"
             >
-              <input type="checkbox" id="terms" checked />
+              <input
+                class="reservation__checkbox"
+                type="checkbox"
+                id="terms"
+                checked
+              />
               <label for="terms">I agree with the terms of use</label>
             </fieldset>
           </form>
@@ -255,7 +281,7 @@
               cups!
             </p>
             <div class="about__circle"></div>
-            <div class="about__circle_animation_blurred"></div>
+            <div class="about__circle about__circle_animation_blurred"></div>
           </div>
         </section>
       </main>
@@ -263,7 +289,7 @@
         <div class="footer__content">
           <div class="footer__logo">
             <img
-              src="/images/logo_coffeeshop_light.svg"
+              src="images/logo_coffeeshop_light.svg"
               alt="Triple Espresso Logo"
             />
           </div>
@@ -274,7 +300,7 @@
                 <div class="footer__social-link">
                   <img
                     class="footer__social-logo"
-                    src="/images/facebook_white.svg"
+                    src="images/facebook_white.svg"
                     alt="Facebook logo"
                   />
                   <p>Facebook</p>
@@ -286,7 +312,7 @@
                 <div class="footer__social-link">
                   <img
                     class="footer__social-logo"
-                    src="/images/instagram_white.svg"
+                    src="images/instagram_white.svg"
                     alt="Instagram logo"
                   />
                   <p>Instagram</p>

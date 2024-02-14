@@ -1,0 +1,47 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 0 0 0;
+  justify-items: flex-start;
+}
+
+.card__list {
+  margin: 0;
+  padding: 0 50px 100px 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.card__title {
+  margin: 0;
+  padding: 0 0 32px 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.card__list-item {
+  margin: 0;
+  display: flex;
+  width: 540px;
+  padding-bottom: 16px;
+  font-family: "Noto Serif", "Times New Roman, serif";
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__list-item:last-of-type {
+  padding: 0;
+}
+
+.card__list-divider {
+  margin: 0;
+  border-bottom: solid black 1px;
+  display: flex;
+  flex-grow: 1;
+}

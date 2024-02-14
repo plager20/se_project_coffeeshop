@@ -12,44 +12,6 @@
   z-index: -1;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.nav__logo {
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  position: relative;
-  top: 0;
-  left: -50px;
-  width: 105px;
-  height: 39px;
-}
-
-.nav__links {
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.nav__link {
-  text-decoration: none;
-}
-
-.nav__link:hover {
-  transition: 0.5s ease-in-out;
-  color: #2f80ed;
-}
-
 .header__title {
   max-width: 729px;
   margin: 0;

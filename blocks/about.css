@@ -48,27 +48,19 @@
 .about__paragraph {
   margin: 0;
   display: flex;
+  font-family: "Noto Serif", "Times New Roman, serif";
 }
 
 .about__circle {
   position: absolute;
-  top: -150px;
-  left: -120px;
+  top: -152px;
+  left: -129px;
   width: 426px;
   height: 426px;
   background-color: #2f80ed;
   border-radius: 50%;
-  z-index: 0;
-  opacity: 1;
 }
 
 .about__circle_animation_blurred {
-  position: absolute;
-  top: -150px;
-  left: -120px;
-  width: 426px;
-  height: 426px;
-  background-color: #2f80ed;
-  border-radius: 50%;
   animation: pulsate 1.3s ease-in-out infinite alternate;
 }
