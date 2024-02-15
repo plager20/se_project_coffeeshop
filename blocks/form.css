@@ -21,10 +21,7 @@
   color: #838383;
   border-color: #838383;
   box-sizing: border-box;
-}
-
-.form__input:last-of-type {
-  margin-bottom: 32px;
+  border-width: 1px;
 }
 
 .form__label {
@@ -33,6 +30,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+}
+
+.form__label:first-of-type {
+  padding-top: 0px;
 }
 
 .form__button {

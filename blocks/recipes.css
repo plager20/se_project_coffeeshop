@@ -40,6 +40,7 @@
   max-width: 1000px;
   flex-wrap: wrap;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .recipes__iframe {
@@ -60,13 +61,5 @@
   padding-top: 24px;
   width: 480px;
   justify-content: space-between;
-  margin: 0;
-}
-
-.recipe__name {
-  margin: 0;
-}
-
-.recipe__video-time {
   margin: 0;
 }
