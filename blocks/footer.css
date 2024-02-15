@@ -36,35 +36,34 @@
 
 .footer__list {
   margin: 0;
-  padding: 0 0 16px 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
-}
-
-.footer__list:last-of-type {
-  padding-bottom: 0;
+  flex-direction: column;
 }
 
 .footer__list-item {
   margin: 0;
-  padding: 0;
+  padding: 0 0 16px 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.footer__social-link {
-  margin: 0;
+.footer__list-item:last-of-type {
   padding: 0;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .footer__social-logo {
   width: 16px;
   height: 16px;
   padding-right: 10px;
+}
+
+.footer__social-link {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
 }
 
 .footer__social-link:hover {
@@ -76,6 +75,7 @@
   margin: auto auto 0 80px;
   padding-bottom: 60px;
   display: flex;
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
 }

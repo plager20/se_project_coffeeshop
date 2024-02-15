@@ -2,15 +2,13 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
+  padding: 30px 80px 0 30px;
 }
 
 .nav__logo {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
-  position: relative;
-  top: 0;
-  left: -50px;
   width: 105px;
   height: 39px;
 }
@@ -29,6 +27,7 @@
 
 .nav__link {
   text-decoration: none;
+  color: black;
 }
 
 .nav__link:hover {

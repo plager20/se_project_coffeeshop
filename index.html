@@ -14,7 +14,7 @@
       content="Coffee, Coffee Shop, Recipe, Expresso, Triple Peaks"
     />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,8 +47,8 @@
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="span-accent">Specialty coffee</span><br />in the Triple
-          Peaks Library
+          <span class="span-accent">Specialty coffee</span>in the Triple Peaks
+          Library
         </h1>
         <p class="header__description">
           Welcome to our study zone! We've got the coffee to energize you and
@@ -61,17 +61,13 @@
         />
         <div class="header__footer">
           <div class="header__footer-columns">
-            <div class="header__column header__column_content_hours">
-              <p class="header__column-heading">Hours</p>
-              <ul class="header__list">
-                <li class="header__list-item">
-                  Monday - Friday (10:00 - 19:00)
-                </li>
-                <li class="header__list-item">
-                  Saturday - Sunday (11:00 - 18:00)
-                </li>
-              </ul>
-            </div>
+            <p class="header__column-heading">Hours</p>
+            <ul class="header__list">
+              <li class="header__list-item">Monday - Friday (10:00 - 19:00)</li>
+              <li class="header__list-item">
+                Saturday - Sunday (11:00 - 18:00)
+              </li>
+            </ul>
           </div>
           <p class="header__address">
             200 Success Avenue, The Town of Triple Peaks
@@ -85,90 +81,93 @@
             Check out some recipes we've collected for your home brewing
             convinience:
           </p>
-          <div class="recipes__videos">
-            <iframe
-              class="recipes__iframe"
-              src="https://www.youtube.com/embed/j6VlT_jUVPc"
-              title="The Ultimate AeroPress Technique (Episode #3)"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              class="recipes__iframe"
-              src="https://www.youtube.com/embed/st571DYYTR8"
-              title="The Ultimate French Press Technique"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <div class="recipes__video-caption">
-              <p class="recipe__name">Aeropress recipe</p>
-              <p class="recipe__video-time">~5 min</p>
-            </div>
-            <div class="recipes__video-caption">
-              <p class="recipe__name">French press recipe</p>
-              <p class="recipe__video-time">~15 min</p>
-            </div>
-          </div>
+          <ul class="recipes__videos">
+            <li>
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc"
+                title="The Ultimate AeroPress Technique (Episode #3)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </li>
+            <li>
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/st571DYYTR8"
+                title="The Ultimate French Press Technique"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </li>
+            <li>
+              <p class="recipes__video-caption">
+                <span class="recipe__name">Aeropress recipe</span>
+                <span class="recipe__video-time">~5 min</span>
+              </p>
+            </li>
+            <li>
+              <p class="recipes__video-caption">
+                <span class="recipe__name">French press recipe</span>
+                <span class="recipe__video-time">~15 min</span>
+              </p>
+            </li>
+          </ul>
         </section>
         <section id="reservation" class="reservation">
           <h2 class="reservation__title">Book a table</h2>
           <form class="reservation__form form">
-            <fieldset class="reservation__fieldset">
-              <label class="reservation__label" for="name">Name *</label>
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Name *</label>
               <input
-                class="reservation__input"
+                class="form__input"
                 type="text"
                 id="name"
                 placeholder="Name Surname"
+                required
               />
-            </fieldset>
-            <fieldset class="reservation__fieldset">
-              <label class="reservation__label" for="number-of-guest"
+              <label class="form__label" for="number-of-guest"
                 >Number of guest *</label
               >
               <input
-                class="reservation__input"
+                class="form__input"
                 type="number"
                 min="1"
                 max="8"
                 id="number-of-guest"
                 placeholder="1-8"
+                required
               />
-            </fieldset>
-            <fieldset class="reservation__fieldset">
-              <label class="reservation__label" for="date-and-time"
+              <label class="form__label" for="date-and-time"
                 >Date & time *</label
               >
               <input
-                class="reservation__input"
+                class="form__input"
                 type="datetime-local"
                 id="date-and-time"
+                required
               />
-            </fieldset>
-            <fieldset class="reservation__fieldset">
-              <label class="reservation__label" for="email">Your email *</label>
+              <label class="form__label" for="email">Your email *</label>
               <input
-                class="reservation__input"
+                class="form__input"
                 type="email"
                 id="email"
                 placeholder="email@email.com"
+                required
               />
+            <fieldset class="form__fieldset">
+              <button class="form__button" type="submit">Book a Table</button>
             </fieldset>
-            <fieldset class="reservation__fieldset">
-              <button class="reservation__button" type="submit">
-                Book a Table
-              </button>
-            </fieldset>
-            <fieldset
-              class="reservation__fieldset reservation__fieldset_checkbox"
-            >
+            <fieldset class="form__fieldset">
+              <label class="form__label form__label_type_checkbox">
               <input
-                class="reservation__checkbox"
+                class="form__checkbox"
                 type="checkbox"
                 id="terms"
-                checked
+                required
               />
-              <label for="terms">I agree with the terms of use</label>
+
+              I agree with the terms of use</label>
             </fieldset>
           </form>
         </section>
@@ -178,9 +177,10 @@
             We brew coffee from locally roasted, Fairtrade certified beans and
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
-          <div class="cards">
+          <div class="menu__cards">
+            <div class="card">
+            <h3 class="card__title">Filter</h3>
             <ul class="card__list">
-              <h3 class="card__title">Filter</h3>
               <li class="card__list-item">
                 Regular (12oz)
                 <span class="card__list-divider"></span>
@@ -206,9 +206,10 @@
                 <span class="card__list-divider"></span>
                 $1.25
               </li>
-            </ul>
+            </ul></div>
+            <div class="card"><h3 class="card__title">Espresso</h3>
             <ul class="card__list">
-              <h3 class="card__title">Espresso</h3>
+
               <li class="card__list-item">
                 Macchiato
                 <span class="card__list-divider"></span>
@@ -229,9 +230,10 @@
                 <span class="card__list-divider"></span>
                 $10
               </li>
-            </ul>
+            </ul></div>
+            <div class="card"><h3 class="card__title">Baked Goods</h3>
             <ul class="card__list">
-              <h3 class="card__title">Baked Goods</h3>
+
               <li class="card__list-item">
                 Almond Croisant
                 <span class="card__list-divider"></span>
@@ -262,7 +264,7 @@
                 <span class="card__list-divider"></span>
                 $0.25
               </li>
-            </ul>
+            </ul></div>
           </div>
         </section>
         <section id="about" class="about">
@@ -297,26 +299,20 @@
             <h3 class="footer__social-heading">Social Media</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <div class="footer__social-link">
                   <img
                     class="footer__social-logo"
                     src="images/facebook_white.svg"
                     alt="Facebook logo"
                   />
-                  <p>Facebook</p>
-                </div>
+                  <a class="footer__social-link">Facebook</a>
               </li>
-            </ul>
-            <ul class="footer__list">
               <li class="footer__list-item">
-                <div class="footer__social-link">
                   <img
                     class="footer__social-logo"
                     src="images/instagram_white.svg"
                     alt="Instagram logo"
                   />
-                  <p>Instagram</p>
-                </div>
+                  <a class="footer__social-link">Instagram</a>
               </li>
             </ul>
           </div>
