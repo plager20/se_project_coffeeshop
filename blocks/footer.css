@@ -64,6 +64,8 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  color: white;
+  text-decoration: none;
 }
 
 .footer__social-link:hover {
